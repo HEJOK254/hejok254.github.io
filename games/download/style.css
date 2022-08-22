@@ -1,0 +1,16 @@
+body{
+    background: linear-gradient(lime, cyan);
+}
+.title{
+    text-align: center;
+    font-size: 70px;
+    color: cornflowerblue;
+}
+.downloadText{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+.downloadButton{
+    background-color: blue;
+}
