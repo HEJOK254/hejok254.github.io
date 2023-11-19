@@ -1,6 +1,4 @@
-https://hejok254.github.io/home/
-https://hejok254.github.io/games/library/
-https://hejok254.github.io/games/download/
-https://hejok254.github.io/games/play/
-https://hejok254.github.io/games/play/ChromaCore/
-https://hejok254.github.io/games/play/Machineer/
+https://hejok254.github.io/
+https://hejok254.github.io/games/
+https://hejok254.github.io/games/ChromaCore/
+https://hejok254.github.io/games/Machineer/
