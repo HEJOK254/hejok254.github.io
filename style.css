@@ -1,3 +1,5 @@
+/*That's such bad css xd*/
+
 .center{
     display: block;
     margin: 0 auto;
@@ -5,16 +7,10 @@
 
 h1 {
     margin-top: 160px;
-    text-align: center;
-    color: azure;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
 }
 
 h2 {
-    text-align: center;
-    color: azure;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: lighter;
 }
 
@@ -22,16 +18,20 @@ body{
     background: linear-gradient(#112355, #231155);
     background-repeat: no-repeat;
     background-size: 100% 1080px;
+
+    text-align: center;
+    color: azure;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 @font-face {
     font-family: Blaka;
-    src: url(../resources/fonts/Blaka-Regular.ttf);
+    src: url(../assets/fonts/Blaka-Regular.ttf);
 }
 
 @font-face {
     font-family: Pixel;
-    src: url(../resources/fonts/PressStart2P-Regular.ttf);
+    src: url(../assets/fonts/PressStart2P-Regular.ttf);
 }
 
 button {
