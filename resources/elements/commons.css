@@ -26,7 +26,6 @@ body {
 .topnav {
     background-color: #2F3480;
     overflow: hidden;
-    max-height: 65px;
 }
 
 .topnav a {
@@ -45,7 +44,7 @@ body {
 
 .topnav .icon {
     display: none;
-    padding: 18px;
+    padding: 17.5px; /* This gives us 64 pixels of topnav bar space :D */
 }
 
 nav a.active {
@@ -57,35 +56,35 @@ nav a.active {
 }
 
 #navbar-logo {
-    padding: 6px;
+    background: none;
+    display: block;
+    padding: 9px;
+    margin: auto;
 }
 
 #navbar-logo img {
-    margin: auto;
-    max-height: 40px; /* Might not be perfect. Plz fix */
+    height: 40px;
+    padding: 0;
 }
 
 /* Wide screen */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
     #navbar-home {
         display: none;
     }
 }
 
 /* Top Bar View*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .topnav a { display: none; }
     .topnav a.icon {
         float: right;
         display: block;
     }
-    #navbar-title.topnav {
-        display: inline;
-    }
 }
 
 /* List View */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .topnav.responsive { position: relative; }
     .topnav.responsive a.icon {
         position: absolute;
@@ -97,8 +96,6 @@ nav a.active {
         display: block;
         text-align: left;
         background-color: #2945af;
-    }
-    #navbar-title.responsive {
-        display: none;
+        height: auto;
     }
 }
