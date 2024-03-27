@@ -1,0 +1,22 @@
+body {
+    /*background-color: black;*/
+    background-image: url(assets/images/PurpleThingy.jpg);
+    scroll-behavior: smooth;
+    background-attachment: scroll;
+}
+
+footer {
+    padding: 16px;
+    bottom: 0;
+    height: 256px;
+    backdrop-filter: blur(50px);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    text-align: center;
+    background: linear-gradient(#00000000, #000000FF);
+}
+
+footer hr {
+    background-color: aliceblue;
+    height: 2px;
+}
