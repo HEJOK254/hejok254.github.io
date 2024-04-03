@@ -4,32 +4,3 @@ body {
     scroll-behavior: smooth;
     background-attachment: scroll;
 }
-
-footer {
-    padding: 16px;
-    bottom: 0;
-    /* backdrop-filter: blur(50px); */
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    text-align: center;
-    background-color: black;
-}
-
-footer hr {
-    background-color: aliceblue;
-    height: 2px;
-}
-
-footer a.button {
-    background-color: #1e20ad;
-    padding: 8px;
-    border-radius: 8px;
-    color: aliceblue;
-    text-decoration: none;
-}
-
-.footerLogo{
-    width: 32px;
-    height: 32px;
-    padding: 8px;
-}
