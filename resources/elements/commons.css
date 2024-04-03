@@ -134,7 +134,6 @@ main {
 footer {
     padding: 16px;
     bottom: 0;
-    /* backdrop-filter: blur(50px); */
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     text-align: center;
