@@ -5,59 +5,66 @@
     #f2f2f2 FONT
 */
 
-@font-face {
-    font-family: 'Munro';
-    src: url(/resources/fonts/Munro/Munro-2LYe.ttf) format('truetype'),
-         url(/resources/fonts/Munro/MunroNarrow-vaO4.ttf);
+:root {
+	--col-focus: #56a1d8;
+	--col-fg: #2945af;
+	--col-bg: #182e59;
+	--col-font: #f2f2f2;
 }
 
 @font-face {
-    font-family: 'Munro Small';
-    src: url(/resources/fonts/Munro/MunroSmall-wPZw.ttf) format('truetype');
+	font-family: "Munro";
+	src: url(/resources/fonts/Munro/Munro-2LYe.ttf) format("truetype"),
+		url(/resources/fonts/Munro/MunroNarrow-vaO4.ttf);
+}
+
+@font-face {
+	font-family: "Munro Small";
+	src: url(/resources/fonts/Munro/MunroSmall-wPZw.ttf) format("truetype");
 }
 
 html {
-    padding-top: 68px;
+	padding-top: 68px;
 }
 
 body {
-    background-color: #182e59;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #f2f2f2;
-    margin: 0;
+	background-color: #182e59;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	color: #f2f2f2;
+	margin: 0;
 }
 
 main {
-    padding: 32px;
+	padding: 32px;
 }
 
 /* Footer */
 footer {
-    padding: 16px;
-    bottom: 0;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    text-align: center;
-    background-color: black;
+	padding: 16px;
+	bottom: 0;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	text-align: center;
+	background-color: black;
 }
 
 footer hr {
-    background-color: aliceblue;
-    height: 2px;
+	background-color: aliceblue;
+	height: 2px;
 }
 
 footer a.button {
-    background-color: #1e20ad;
-    padding: 8px;
-    border-radius: 8px;
-    color: aliceblue;
-    text-decoration: none;
+	background-color: #1e20ad;
+	padding: 8px;
+	border-radius: 8px;
+	color: aliceblue;
+	text-decoration: none;
 }
 
-.footerLogo{
-    width: 32px;
-    height: 32px;
-    padding: 8px;
+.footerLogo {
+	width: 32px;
+	height: 32px;
+	padding: 8px;
 }
