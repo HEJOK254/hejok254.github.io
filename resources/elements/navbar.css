@@ -46,6 +46,11 @@
 
 #navbar-logo img {
 	height: 40px;
+
+	/* Keep the logo pixelated */
+	image-rendering: pixelated;
+	image-rendering: -moz-crisp-edges;
+	image-rendering: crisp-edges;
 }
 
 /* Navigation Item Button Colors*/
