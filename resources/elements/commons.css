@@ -23,10 +23,6 @@
 	src: url(/resources/fonts/Munro/MunroSmall-wPZw.ttf) format("truetype");
 }
 
-html {
-	padding-top: 68px;
-}
-
 body {
 	background-color: #182e59;
 	background-repeat: no-repeat;
