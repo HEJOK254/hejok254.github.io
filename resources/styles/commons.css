@@ -10,6 +10,9 @@
 	--col-fg: #2945af;
 	--col-bg: #182e59;
 	--col-font: #f2f2f2;
+
+	--col-btn-hover: #8fb8d62f;
+	--col-btn-active: #6bc1ff6b;
 }
 
 @font-face {

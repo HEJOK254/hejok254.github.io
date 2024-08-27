@@ -1,19 +1,15 @@
-function expandNav() {
-	// Get elements
-	var navbar = document.getElementById("navbar");
-	var title = document.getElementById("navbar-title");
+// Get elements
+const sidebar = document.getElementById("sidebar");
+const topnav = document.getElementById("topnav");
 
-	// Navbar
-	if (navbar.className === "topnav") {
-		navbar.className += " responsive";
+function toggleSidebar() {
+	if (sidebar.classList.contains("shown")) {
+		// Hide sidebar
+		sidebar.classList.remove("shown");
+		topnav.classList.remove("sidebar-shown");
 	} else {
-		navbar.className = "topnav";
-	}
-
-	// Title
-	if (title.className === "topnav") {
-		title.className += " responsive";
-	} else {
-		title.className = "topnav";
+		// Show sidebar
+		sidebar.classList.add("shown");
+		topnav.classList.add("sidebar-shown");
 	}
 }
