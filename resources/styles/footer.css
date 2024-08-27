@@ -9,6 +9,8 @@ footer {
 
 footer hr {
 	background-color: aliceblue;
+	border: none;
+	border-radius: 2px;
 	height: 2px;
 }
 
