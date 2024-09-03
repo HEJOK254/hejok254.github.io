@@ -1,5 +1,5 @@
 // Credit: Takos c: (he came up with all those random strings)
-const strings = [
+const longStrings = [
 	"Hejok254 was here",
 	"I am a foot",
 	"I own an elbow!",
@@ -67,10 +67,82 @@ const strings = [
 	"69th message hehe", // Not really because I've removed some lmao
 	"dawg"
 ];
+const shortStrings = [
+	"Hejok254 was here",
+	"I am a foot",
+	"I own an elbow!",
+	"Peter, the horse is here",
+	"you know what that means... F I S H",
+	"Le fish au chocolat",
+	"#CAOE68",
+	"awesome website moment",
+	"holy moly",
+	":)",
+	"Dash all day, dash all night",
+	"Im going to sleep",
+	"wake up",
+	"She garten on my banban til i opila bird",
+	"did you ever saw a so fast dog?",
+	"i love cp (creator points [gd])",
+	"Hejok69420 swag",
+	"Your home security is great... or is it?",
+	"yes",
+	"is water wet?",
+	"bowomp",
+	"*instert message here*",
+	"McDonald fries hit different",
+	"rtyhn mju.j8ikl",
+	"meow",
+	"https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+	"baller",
+	"i got that rgbtq keyboard",
+	":3",
+	"thats so awesome sauce",
+	"an apple a day keeps the doctor away",
+	"chroma core 2027",
+	"𝓯𝓻𝓮𝓪𝓴𝔂",
+	"fish jumpscare",
+	"MILF - Man I Love Frogs",
+	"come kiss me on my hot mouth, im feeling romantical",
+	"CAREFUL SPONGEBOB, CAREFUL SPONGEBOB, CAREFUL SPONGEBOB!!!",
+	"what the dog doing?",
+	"Everybody asks what the dog doing, but not how the dog doing :(",
+	"stop edging me like this lil bro",
+	"John H. Backlights",
+	"¯\\_(ツ)_/¯",
+	"chat, get his address",
+	"Takos reference",
+	">>>> TIDAL >>>>",
+	"<<<< WAVE <<<<",
+	"woah, a pipe bomb!",
+	"153.383.61.563",
+	"har har har har har har har har har har",
+	"KILLBOT",
+	"The banana spoke in riddles",
+	"Pidgeons are not real",
+	"The heavy is dead?!!",
+	"GOLF!",
+	"i love money",
+	"We need to cook jesse",
+	"oh damn it, the monkey escaped",
+	"LETS GO GAMBLING!",
+	"aw dang it",
+	"i cant stop winning!",
+	"michael jackson",
+	"bo'ohw'o'wo'er",
+	"help me",
+	"69th message hehe", // Not really because I've removed some lmao
+	"dawg"
+];
 
-const randomElements = document.querySelectorAll(".randomText");
-const stringCount = strings.length;
+const randomLongElements = document.querySelectorAll(".randomText");
+const randomShortElements = document.querySelectorAll(".randomTextShort");
+const longStringCount = longStrings.length;
+const shortStringCount = longStrings.length;
 
-randomElements.forEach((element) => {
-	element.innerHTML = strings[Math.floor(Math.random() * stringCount)];
+randomLongElements.forEach((element) => {
+	element.innerHTML = longStrings[Math.floor(Math.random() * longStringCount)];
+});
+randomShortElements.forEach((element) => {
+	element.innerHTML = shortStrings[Math.floor(Math.random() * shortStringCount)];
 });
