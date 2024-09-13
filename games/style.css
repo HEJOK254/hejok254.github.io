@@ -85,6 +85,7 @@ button {
 }
 
 ul {
+    user-select: none;
     position: fixed;
     list-style-type: none;
     padding: 0;
@@ -115,11 +116,15 @@ li a {
     border-radius: 8px;
 }
 
-li a:hover:not(.active):not(li#github a) {
-    background-color: #1c8d75;
+li a.games {
+    background-color: #40c5d6; /* Cyan background */
 }
 
-li a.games {
+li a:hover:not(.games):not(.active):not(li#github a) {
+    background-color: #1c8d75; /* Green for non-active links */
+}
+
+li a.games:hover {
     background-color: #40c5d6;
 }
 
@@ -142,8 +147,4 @@ li#signature {
     color: azure;
     font-size: 20px;
     text-decoration: none;
-}
-
-.active:not(.home) {
-    background-color: #18c0d6;
 }
