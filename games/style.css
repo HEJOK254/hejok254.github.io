@@ -119,7 +119,7 @@ li a:hover:not(.active):not(li#github a) {
     background-color: #1c8d75;
 }
 
-li a.home, li a[href*="Games"] {
+li a.games {
     background-color: #40c5d6;
 }
 
