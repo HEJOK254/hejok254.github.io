@@ -51,6 +51,10 @@ li#github a img {
 
 li#github {
     float: right;
+    a {
+        /* (Navbar height - icon height) / 2 (left-right, top-bottom) */
+        padding: calc((60px - 32px) / 2);
+    }
 }
 
 li#signature {
