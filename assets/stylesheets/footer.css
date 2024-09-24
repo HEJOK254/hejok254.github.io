@@ -1,8 +1,6 @@
 footer {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
+	width: 100%;
+	box-sizing: border-box;
 	background-color: rgb(28, 28, 32);
 	padding: 2rem;
 	display: flex;
