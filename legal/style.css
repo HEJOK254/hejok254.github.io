@@ -9,22 +9,41 @@ body {
 }
 
 main {
-	margin: 6rem;
-	margin-top: 8rem;
-	flex-grow: 1;
+    padding: 2rem;
+    text-align: center;
+    flex-grow: 1;
 }
 
 h1 {
-	font-size: 3rem;
-	text-align: center;
+    font-size: 2.5rem;
+    color: #ff9800;
+    margin-bottom: 1rem;
 }
 
 h2 {
-	margin: 0;
+    font-size: 1.8rem;
+    color: #ff5722;
+}
+
+hr {
+    border: 1px solid #ff5722;
+    width: 50%;
+    margin: 1rem auto;
 }
 
 a {
-	color: #d1d1d1;
+    color: #ff9800;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
 
 #disclaimer {
