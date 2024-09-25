@@ -9,7 +9,7 @@ body {
 }
 
 main {
-    padding: 2rem;
+    padding: 5rem 2rem;
     text-align: center;
     flex-grow: 1;
 }
