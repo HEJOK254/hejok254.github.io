@@ -1,0 +1,6 @@
+body {
+    /*background-color: black;*/
+    background-image: url(/resources/images/backgrounds/PurpleThingy.jpg);
+    scroll-behavior: smooth;
+    background-attachment: scroll;
+}
