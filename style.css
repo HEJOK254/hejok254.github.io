@@ -1,27 +1,27 @@
 /*That's such bad css xd*/
 
-.center{
-    display: block;
-    margin: 0 auto;
+.center {
+	display: block;
+	margin: 0 auto;
 }
 
 h1 {
-    margin-top: 160px;
-    font-weight: bold;
+	margin-top: 160px;
+	font-weight: bold;
 }
 
 h2 {
-    font-weight: lighter;
+	font-weight: lighter;
 }
 
-body{
-    background: linear-gradient(#112355, #231155);
-    background-repeat: no-repeat;
-    background-size: 100% 1080px;
+body {
+	background: linear-gradient(#112355, #231155);
+	background-repeat: no-repeat;
+	background-size: 100% 1080px;
 
-    text-align: center;
-    color: azure;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	text-align: center;
+	color: azure;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
 	margin: 0;
 	display: flex;
@@ -34,11 +34,11 @@ main {
 }
 
 @font-face {
-    font-family: Blaka;
-    src: url(../assets/fonts/Blaka-Regular.ttf);
+	font-family: Blaka;
+	src: url(../assets/fonts/Blaka-Regular.ttf);
 }
 
 @font-face {
-    font-family: Pixel;
-    src: url(../assets/fonts/PressStart2P-Regular.ttf);
+	font-family: Pixel;
+	src: url(../assets/fonts/PressStart2P-Regular.ttf);
 }
