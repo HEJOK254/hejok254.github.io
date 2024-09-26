@@ -1,66 +1,197 @@
 <html>
-    <head>
-        <title>Games - HEJOK254</title>
+	<head>
+		<title>Games - HEJOK254</title>
 
-        <link rel = "icon" href = "../assets/favicons/games.gif" type = "image/x-icon">
-        <link rel="stylesheet" href="style.css">
+		<link rel="icon" href="../assets/favicons/games.gif" type="image/x-icon" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="/assets/stylesheets/navbar.css" />
+		<link rel="stylesheet" href="/assets/stylesheets/footer.css" />
 
-        <meta charset="UTF-8">
-        <meta name="description" content="HEJOK254's game library">
-        <meta name="author" content="HEJOK254">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="apple-mobile-web-app-capable" content="yes">
+		<meta charset="UTF-8" />
+		<meta name="description" content="HEJOK254's game library" />
+		<meta name="author" content="HEJOK254" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
 
-        <!--Discord Embed-->
-        <meta content="Game Library - HEJOK254" property="og:title" />
-        <meta content="My games" property="og:description"/>
-        <meta content="https://hejok254.github.io/games" property="og:url"/>
-        <meta content="https://avatars.githubusercontent.com/u/90698026?v=4" property="og:image"/>
-        <meta content="#151e55" data-react-helmet="true" name="theme-color"/>
+		<!--Discord Embed-->
+		<meta content="Game Library - HEJOK254" property="og:title" />
+		<meta content="My games" property="og:description" />
+		<meta content="https://hejok254.github.io/games" property="og:url" />
+		<meta content="https://avatars.githubusercontent.com/u/90698026?v=4" property="og:image" />
+		<meta content="#151e55" data-react-helmet="true" name="theme-color" />
 
-        <meta name="mobile-web-app-capable" content="yes">
-    </head>
-    <body>
-        <!--Navigation bar-->
-        <ul>
-            <li><a href=".." class="home">Home</a></li>
-            <li><a>Games</a></li>
-            <li id="github"><a href="https://github.com/HEJOK254"><img src="../assets/logos/github-mark-white.svg" title="My Github" alt="GitHub logo"></a></li>
-            <li id="signature">HEJOK254</li>
-        </ul>  
+		<meta name="mobile-web-app-capable" content="yes" />
+	</head>
+	<body>
+		<!--Navigation bar-->
+		<ul>
+			<li><a href="/">Home</a></li>
+			<li><a href="/games/" class="active">Games</a></li>
+			<li id="github">
+				<a href="https://github.com/HEJOK254"
+					><img src="../assets/logos/github-mark-white.svg" title="My Github" alt="GitHub logo"
+				/></a>
+			</li>
+			<li id="signature">HEJOK254</li>
+		</ul>
 
-        <br><br><br><br>
-        
-        <div class="game">
-            <img src="../assets/logos/chromacore.png" width="117px" height="117px" class="gameList" style="margin-left:10px;margin-top: 15px;">
-            <p style="margin-left:135px; margin-top:-123px; font-size: 30px; color: white; font-weight: bold; margin-bottom: 25px;">ChromaCore</p>
-            <p style="font-size: 18px ;margin-top: -28px; margin-left: 137px; color: #697186; margin-bottom: 5px;">Genre: Platformer</p>
-            <img src="../assets/logos/windows.svg" class="platform" style="margin-left:139px; margin-bottom: 10px;">
-            <img src="../assets/logos/html5.png" class="platform" style="margin-left:5px; margin-bottom: 10px;">
-            <br>
-            <button class="download" style="float: left; margin-bottom: 0px; margin-left: 135px;" onclick="window.location.replace('./download/ChromaCore')">Download</button>
-            <button class="play" style="margin-top: -25.1px; margin-bottom: 18px; margin-left: 225px;" onclick="window.location.replace('./ChromaCore/beta')">Play Beta</button>
-            <button class="play" style="margin-top: -42.5px; margin-left: 312px;" onclick="window.location.replace('./ChromaCore')">Play</button>
-        </div>
+		<br /><br /><br /><br />
 
-        <div class="game">
-            <img src="../assets/logos/machineer.webp" width="117px" height="117px" class="gameList" style="margin-left:10px;margin-top: 0px;">
-            <p style="margin-left:135px; margin-top:-123px; font-size: 30px; color: white; font-weight: bold; margin-bottom: 25px;">Machineer</p>
-            <p style="font-size: 18px ;margin-top: -28px; margin-left: 137px; color: #697186; margin-bottom: 5px;">Genre: Sandbox</p>
-            <img src="../assets/logos/windows.svg" class="platform" style="margin-left:139px; margin-bottom: 10px;">
-            <img src="../assets/logos/html5.png" class="platform" style="margin-left:5px; margin-bottom: 10px;">
-            <br>
-            <button class="download" style="float: left; margin-bottom: 0px; margin-left: 135px;" onclick="window.location.replace('./download/Machineer')">Download</button>
-            <button class="play" style="margin-top: -25.1px; margin-bottom: 18px; margin-left: 225px;" onclick="window.location.replace('./Machineer')">Play</button>
-        </div>
+		<main>
+			<div class="game">
+				<img
+					src="../assets/logos/chromacore.png"
+					width="117px"
+					height="117px"
+					class="gameList"
+					style="margin-left: 10px; margin-top: 15px" />
+				<p
+					style="
+						margin-left: 135px;
+						margin-top: -123px;
+						font-size: 30px;
+						color: white;
+						font-weight: bold;
+						margin-bottom: 25px;
+					">
+					ChromaCore
+				</p>
+				<p
+					style="
+						font-size: 18px;
+						margin-top: -28px;
+						margin-left: 137px;
+						color: #697186;
+						margin-bottom: 5px;
+					">
+					Genre: Platformer
+				</p>
+				<img
+					src="../assets/logos/windows.svg"
+					class="platform"
+					style="margin-left: 139px; margin-bottom: 10px" />
+				<img
+					src="../assets/logos/html5.png"
+					class="platform"
+					style="margin-left: 5px; margin-bottom: 10px" />
+				<br />
+				<button
+					class="download"
+					style="float: left; margin-bottom: 0px; margin-left: 135px"
+					onclick="window.location.replace('./download/ChromaCore')">
+					Download
+				</button>
+				<button
+					class="play"
+					style="margin-top: -25.1px; margin-bottom: 18px; margin-left: 225px"
+					onclick="window.location.replace('./ChromaCore/beta')">
+					Play Beta
+				</button>
+				<button
+					class="play"
+					style="margin-top: -42.5px; margin-left: 312px"
+					onclick="window.location.replace('./ChromaCore')">
+					Play
+				</button>
+			</div>
+			<div class="game">
+				<img
+					src="../assets/logos/machineer.webp"
+					width="117px"
+					height="117px"
+					class="gameList"
+					style="margin-left: 10px; margin-top: 0px" />
+				<p
+					style="
+						margin-left: 135px;
+						margin-top: -123px;
+						font-size: 30px;
+						color: white;
+						font-weight: bold;
+						margin-bottom: 25px;
+					">
+					Machineer
+				</p>
+				<p
+					style="
+						font-size: 18px;
+						margin-top: -28px;
+						margin-left: 137px;
+						color: #697186;
+						margin-bottom: 5px;
+					">
+					Genre: Sandbox
+				</p>
+				<img
+					src="../assets/logos/windows.svg"
+					class="platform"
+					style="margin-left: 139px; margin-bottom: 10px" />
+				<img
+					src="../assets/logos/html5.png"
+					class="platform"
+					style="margin-left: 5px; margin-bottom: 10px" />
+				<br />
+				<button
+					class="download"
+					style="float: left; margin-bottom: 0px; margin-left: 135px"
+					onclick="window.location.replace('./download/Machineer')">
+					Download
+				</button>
+				<button
+					class="play"
+					style="margin-top: -25.1px; margin-bottom: 18px; margin-left: 225px"
+					onclick="window.location.replace('./Machineer')">
+					Play
+				</button>
+			</div>
+			<div class="game">
+				<img
+					src="../assets/logos/applecatch.webp"
+					width="117px"
+					height="117px"
+					class="gameList"
+					style="margin-left: 10px; margin-top: 0px"
+					alt="Apple Catch Icon" />
+				<p
+					style="
+						margin-left: 135px;
+						margin-top: -123px;
+						font-size: 30px;
+						color: white;
+						font-weight: bold;
+						margin-bottom: 25px;
+					">
+					Apple Catch
+				</p>
+				<p
+					style="
+						font-size: 18px;
+						margin-top: -28px;
+						margin-left: 137px;
+						color: #697186;
+						margin-bottom: 5px;
+					">
+					Genre: Arcade
+				</p>
+				<img
+					src="../assets/logos/android.svg"
+					class="platform"
+					style="margin-left: 139px; margin-bottom: 10px"
+					title="Android™" />
+				<br />
+				<button
+					class="download"
+					style="margin-bottom: 18px; margin-left: 135px"
+					onclick="window.location.replace('./download/AppleCatch')">
+					Download
+				</button>
+			</div>
+		</main>
 
-        <div class="game">
-            <img src="../assets/logos/applecatch.webp" width="117px" height="117px" class="gameList" style="margin-left:10px;margin-top: 0px;" alt="Apple Catch Icon">
-            <p style="margin-left:135px; margin-top:-123px; font-size: 30px; color: white; font-weight: bold; margin-bottom: 25px;">Apple Catch</p>
-            <p style="font-size: 18px ;margin-top: -28px; margin-left: 137px; color: #697186; margin-bottom: 5px;">Genre: Arcade</p>
-            <img src="../assets/logos/android.svg" class="platform" style="margin-left:139px; margin-bottom: 10px;" title="The Android robot is reproduced or modified from work created and shared by Google and used according to terms described in the Creative Commons 3.0 Attribution License.">
-            <br>
-            <button class="download" style="margin-bottom: 18px; margin-left: 135px;" onclick="window.location.replace('./download/AppleCatch')">Download</button>
-        </div>
-    </body>
+		<footer>
+			<!-- It looked weird with just the legal link lol -->
+			<p>HEJOK254</p>
+			<p><a href="/legal">Legal Information</a></p>
+		</footer>
+	</body>
 </html>
