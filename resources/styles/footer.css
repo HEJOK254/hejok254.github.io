@@ -1,0 +1,146 @@
+:root {
+	--footer-title-size: 4rem;
+	--footer-mobile-title-size: 3.5rem;
+	--footer-small-title-size: 1.25rem;
+	--footer-icon-size: 2rem;
+}
+
+footer {
+	padding: 0;
+	bottom: 0;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	text-align: left;
+	background-color: black;
+	overflow: hidden;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	.mainContainer {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-items: flex-end;
+		box-sizing: border-box;
+		padding: 4rem;
+		width: 100%;
+
+		@media screen and (max-width: 791px) {
+			padding: 1rem;
+		}
+
+		div {
+			padding: 2rem;
+			padding-top: 1rem;
+		}
+
+		.contentContainer {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			padding: 0;
+		}
+
+		#footerTitle {
+			flex-grow: 1;
+
+			/* I have no idea how to make it scale properly lol */
+			.randomTextShort {
+				color: lightgray;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				overflow: hidden;
+				max-width: 35vw;
+
+				@media screen and (max-width: 791px) {
+					max-width: 80vw;
+				}
+			}
+		}
+	}
+
+	h1 {
+		color: white;
+		font-size: var(--footer-title-size);
+		font-weight: 500;
+		margin: 0;
+		margin-bottom: 0.5rem;
+		padding: 0;
+
+		/* Shorten and scale down the title on mobile displays */
+		@media screen and (max-width: 791px) {
+			span {
+				display: none;
+			}
+			&::after {
+				content: "I'm a footer.";
+				font-size: var(--footer-mobile-title-size);
+			}
+		}
+	}
+
+	h2 {
+		color: white;
+		font-size: var(--footer-small-title-size);
+		font-weight: 400;
+		margin: 0;
+		margin-bottom: 0.1rem;
+		padding: 0;
+	}
+
+	p {
+		padding: 0;
+		margin: 0;
+	}
+
+	.bottomPanel {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		margin: 1rem;
+
+		* {
+			margin: 0 1rem;
+			padding: 0;
+		}
+	}
+}
+
+.footerIcon {
+	--accent-color: white;
+	img {
+		vertical-align: middle;
+		width: var(--footer-icon-size);
+		height: var(--footer-icon-size);
+	}
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+
+footer hr {
+	background-color: aliceblue;
+	border: none;
+	border-radius: 2px;
+	height: 1px;
+	width: 80%;
+}
+
+footer a {
+	--accent-color: lightgray;
+	color: var(--accent-color);
+	text-decoration: none;
+	border-bottom: 2px dotted lightgray;
+
+	/* Sick glow effect controlled by --accent-color */
+	@media (hover: hover) {
+		transition: all 0.8s ease;
+
+		&:hover {
+			filter: drop-shadow(0 0 0.75rem var(--accent-color));
+		}
+	}
+}

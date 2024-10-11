@@ -1,0 +1,40 @@
+/* Color Palette
+    #56a1d8 Attention
+    #2945af FG
+    #182e59 BG
+    #f2f2f2 FONT
+*/
+
+:root {
+	--col-focus: #56a1d8;
+	--col-fg: #2945af;
+	--col-bg: #182e59;
+	--col-font: #f2f2f2;
+
+	--col-btn-hover: #8fb8d62f;
+	--col-btn-active: #6bc1ff6b;
+}
+
+@font-face {
+	font-family: "Munro";
+	src: url(/resources/fonts/Munro/Munro-2LYe.ttf) format("truetype"),
+		url(/resources/fonts/Munro/MunroNarrow-vaO4.ttf);
+}
+
+@font-face {
+	font-family: "Munro Small";
+	src: url(/resources/fonts/Munro/MunroSmall-wPZw.ttf) format("truetype");
+}
+
+body {
+	background-color: #182e59;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	color: #f2f2f2;
+	margin: 0;
+}
+
+main {
+	padding: 32px;
+}

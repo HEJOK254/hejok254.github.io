@@ -20,39 +20,129 @@
 		<meta content="Very much a website :)" property="og:description" />
 		<meta content="https://hejok254.github.io/home" property="og:url" />
 		<meta content="https://avatars.githubusercontent.com/u/90698026?v=4" property="og:image" />
-
 		<meta content="#151e55" data-react-helmet="true" name="theme-color" />
 
-		<link rel="icon" href="../assets/favicons/home.png" type="image/x-icon" />
-		<link rel="stylesheet" href="style.css" />
-		<link rel="stylesheet" href="/assets/stylesheets/navbar.css" />
-		<link rel="stylesheet" href="/assets/stylesheets/footer.css" />
+		<link rel="icon" href="/resources/images/favicons/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="styles.css" />
 
-		<meta name="viewport" content="width=device-width" />
+		<!-- Common elements -->
+		<link rel="stylesheet" href="/resources/styles/commons.css" />
+		<link rel="stylesheet" href="/resources/styles/navbar.css" />
+		<link rel="stylesheet" href="/resources/styles/footer.css" />
+
+		<!-- Navbar -->
+		<script src="/resources/scripts/navbar.js" defer></script>
+
+		<script src="/resources/scripts/random.js" defer></script>
+
+		<!-- Load an icon library to show a hamburger menu (bars) on small screens | https://www.w3schools.com/howto/howto_js_topnav_responsive.asp <3 -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 	</head>
 	<body>
 		<!--Navigation bar-->
-		<ul>
-			<li><a href="" class="home">Home</a></li>
-			<li><a href="/games/">Games</a></li>
-			<li id="signature">HEJOK254</li>
-			<li id="github">
-				<a href="https://github.com/HEJOK254"
-					><img src="../assets/logos/github-mark-white.svg" title="My Github" alt="GitHub logo"
-				/></a>
-			</li>
-		</ul>
-
+		<nav id="topnav">
+			<button id="menuToggle" onclick="toggleSidebar()" title="Toggle Sidebar">
+				<i class="fa fa-bars"></i>
+			</button>
+			<div id="left">
+				<a href="games">Games</a>
+				<a href="projects">Projects</a>
+			</div>
+			<a href="/" class="home"
+				><img src="/resources/images/logos/logo_white.webp" alt="HEJOK254"
+			/></a>
+			<div id="right">
+				<a href="about">About</a>
+				<a href="news">News</a>
+			</div>
+		</nav>
+		<nav id="sidebar">
+			<a href="/">Home</a>
+			<a href="games">Games</a>
+			<a href="projects">Projects</a>
+			<a href="about">About</a>
+			<a href="news">News</a>
+			<!-- Credit: Takos c: (he came up with all those random strings) -->
+			<p class="bottom randomText">The random message thing is broken</p>
+		</nav>
 		<main>
-			<h1>Placeholder Text</h1>
-			<h2>What should i put there?🤔</h2>
-			<br /><br /><br />
-			<h2>I'm working on it ;)</h2>
+			<p>Some interesting text</p>
+			<p>More interesting text</p>
+			<br />
+			<p>Even more interesting text</p>
+			<p>
+				This is just a test, which is why I'm not doing it the proper way which would probably be
+				adding a bunch of divs and stuff maybe
+			</p>
+			<div style="height: 48px"></div>
+			<hr />
+			<div style="height: 48px"></div>
+			<p>Hey there</p>
+			<div style="height: 128px"></div>
+			<p>I swear I'm working on it D:</p>
+			<div style="height: 128px"></div>
+			<p>Yooo it's workingg</p>
+			<p>Let's go dude</p>
+			<p class="bottom randomText">The random message thing is broken</p>
+			<p class="bottom randomText">The random message thing is broken</p>
+			<p class="bottom randomText">The random message thing is broken</p>
+			<p class="bottom randomText">The random message thing is broken</p>
+
+			<p>Five nights at freddy's</p>
+			<p>Five nights at freddy's</p>
+			<p>Five nights at freddy's</p>
+			<p>Five nights at freddy's</p>
+			<p>Five nights at freddy's</p>
+			<p>Five nights at freddy's</p>
+			<p>Five nights at freddy's</p>
+			<p>Five nights at freddy's</p>
+			<p>Five nights at freddy's</p>
+			<p>Five nights at freddy's</p>
+			<p>Five nights at freddy's</p>
+			<p>Five nights at freddy's</p>
 		</main>
 		<footer>
-			<!-- It looked weird with just the legal link lol -->
-			<p>HEJOK254</p>
-			<p><a href="/legal">Legal Information</a></p>
+			<div class="mainContainer">
+				<div id="footerTitle">
+					<h1><span>I am a footer.</span></h1>
+					<p class="randomTextShort">Random Text</p>
+				</div>
+				<div class="contentContainer">
+					<div>
+						<h2>Contact me:</h2>
+						<p><a href="mailto:contact@hejok254.anonaddy.com">contact@hejok254.anonaddy.com</a></p>
+					</div>
+					<div>
+						<h2>Sitemap:</h2>
+						<p><a href="/sitemap.xml">hejok254.github.io/sitemap.xml</a></p>
+					</div>
+				</div>
+			</div>
+			<hr />
+			<div class="bottomPanel">
+				<a href="https://github.com/HEJOK254" class="footerIcon">
+					<img
+						src="/resources/images/logos/github-mark-white.svg"
+						title="My Github"
+						alt="GitHub logo" />
+				</a>
+				<a href="https://dly.to/OTxm9NjIiVv" class="footerIcon">
+					<img
+						src="/resources/images/logos/daily-dev-white.svg"
+						title="My Daily.dev Profile (barely used)"
+						alt="Daily.dev logo" />
+				</a>
+				<a href="https://discord.gg/8qzctfPrBW" class="footerIcon">
+					<img
+						src="/resources/images/logos/discord-mark-white.svg"
+						title="GameBot Discord Server"
+						alt="Discord logo" />
+				</a>
+			</div>
 		</footer>
 	</body>
 </html>
