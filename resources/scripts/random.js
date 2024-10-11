@@ -65,7 +65,9 @@ const longStrings = [
 	"bo'ohw'o'wo'er",
 	"help me",
 	"69th message hehe", // Not really because I've removed some lmao
-	"dawg"
+	"dawg",
+	"undefined",
+	"-1"
 ];
 const shortStrings = [
 	"Hejok254 was here",
@@ -132,13 +134,15 @@ const shortStrings = [
 	"bo'ohw'o'wo'er",
 	"help me",
 	"69th message hehe", // Not really because I've removed some lmao
-	"dawg"
+	"dawg",
+	"undefined",
+	"-1"
 ];
 
 const randomLongElements = document.querySelectorAll(".randomText");
 const randomShortElements = document.querySelectorAll(".randomTextShort");
 const longStringCount = longStrings.length;
-const shortStringCount = longStrings.length;
+const shortStringCount = shortStrings.length;
 
 randomLongElements.forEach((element) => {
 	element.innerHTML = longStrings[Math.floor(Math.random() * longStringCount)];
